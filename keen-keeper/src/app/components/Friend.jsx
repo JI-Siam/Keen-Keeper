@@ -1,9 +1,10 @@
-import React from 'react';
+
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Friend = ({friend}) => {
     return (
-        <div className=" text-center">
+        <Link href={`/friend/${friend.id}`} className=" text-center">
             <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <div className="relative w-[100px] h-[100px]">
@@ -27,7 +28,7 @@ const Friend = ({friend}) => {
        
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
