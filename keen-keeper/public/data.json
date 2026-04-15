@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Cristiano Ronaldo",
+    "picture": "https://example.com/ronaldo.jpg",
+    "email": "ronaldo@football.com",
+    "days_since_contact": 3,
+    "status": "active",
+    "tags": ["football", "legend"],
+    "bio": "World-famous footballer. Always chasing greatness.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 2,
+    "name": "Sheikh Hasina",
+    "picture": "https://example.com/hasina.jpg",
+    "email": "hasina@gov.bd",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["politics", "leader"],
+    "bio": "Prime Minister of Bangladesh. Very busy schedule.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 3,
+    "name": "Elon Musk",
+    "picture": "https://example.com/musk.jpg",
+    "email": "elon@spacex.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["tech", "billionaire"],
+    "bio": "CEO of multiple companies. Probably tweeting right now.",
+    "goal": 10,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 4,
+    "name": "Taylor Swift",
+    "picture": "https://example.com/swift.jpg",
+    "email": "taylor@music.com",
+    "days_since_contact": 5,
+    "status": "active",
+    "tags": ["music", "celebrity"],
+    "bio": "Singer-songwriter. Writes songs about everything.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 5,
+    "name": "Lionel Messi",
+    "picture": "https://example.com/messi.jpg",
+    "email": "messi@football.com",
+    "days_since_contact": 1,
+    "status": "active",
+    "tags": ["football", "goat"],
+    "bio": "Calm genius on the field. Ronaldo's eternal rival.",
+    "goal": 7,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Mark Zuckerberg",
+    "picture": "https://example.com/zuck.jpg",
+    "email": "mark@meta.com",
+    "days_since_contact": 15,
+    "status": "pending",
+    "tags": ["tech", "meta"],
+    "bio": "Building the metaverse. Might reply in VR.",
+    "goal": 12,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 7,
+    "name": "MrBeast",
+    "picture": "https://example.com/mrbeast.jpg",
+    "email": "beast@youtube.com",
+    "days_since_contact": 9,
+    "status": "pending",
+    "tags": ["youtube", "creator"],
+    "bio": "Gives away crazy amounts of money for content.",
+    "goal": 10,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 8,
+    "name": "Narendra Modi",
+    "picture": "https://example.com/modi.jpg",
+    "email": "modi@gov.in",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["politics", "leader"],
+    "bio": "Prime Minister of India. Hard to get on a call.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  }
+]
