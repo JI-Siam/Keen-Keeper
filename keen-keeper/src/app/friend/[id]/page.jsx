@@ -1,4 +1,6 @@
 
+import Details from "@/app/components/Details";
+
 const DetailsPage = async ({params}) => {
     const {id} = await params ;
 
@@ -10,6 +12,8 @@ const DetailsPage = async ({params}) => {
         return (
         <div>
             Details of user :  {selectedFriend.name}
+
+            <Details friend={selectedFriend}></Details>
         </div>
     );
 };

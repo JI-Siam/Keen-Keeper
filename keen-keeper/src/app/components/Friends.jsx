@@ -9,7 +9,7 @@ const Friends =    async () => {
     return (
         <div>
             <h1 className="font-bold text-xl my-10">Your Friends</h1>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid  sm:grid-cols-2 xl:grid-cols-4 gap-3">
                 {friends.map(friend => <Friend key={friend.id} friend={friend}> </Friend>)}
             </div>
         </div>
