@@ -1,9 +1,11 @@
 
 
-const AboutPage = () => {
+const AboutPage =  async () => {
+    const res = await fetch('http://localhost:3000/data.json');
+    const posts =await res.json() ;
     return (
         <div>
-            this is about page
+           <h1>{posts.length}</h1>
         </div>
     );
 };
