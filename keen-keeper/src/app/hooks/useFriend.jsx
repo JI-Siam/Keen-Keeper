@@ -1,11 +1,23 @@
-import React from 'react';
-
+'use client'
+import {useState} from 'react' ;
+import {useEffect} from 'react' ;
 const useFriend = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+    const [friends , setFriends] = useState([]) ;
+    const [loading , setLoading] = useState(true) ;
+
+    useEffect(()=>{
+        const fetchData = async ()=> {
+            const res  = await fetch("/data.json") ;
+            const data = await res.json() ;
+
+            setTimeout(()=>{
+                setFriends(data) ;
+                setLoading(false) ;
+            }, 1500) ;
+        } ;
+        fetchData() ; 
+    },  [])
+    return {friends , loading} ;
 };
 
 export default useFriend;
