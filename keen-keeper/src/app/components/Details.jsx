@@ -7,6 +7,9 @@ import { LuMessageSquareMore } from "react-icons/lu";
 import { IoVideocamOutline } from "react-icons/io5";
 import { FriendContext } from '../context/FriendContext';
 import { useContext } from 'react';
+import { HiOutlineBellSnooze } from "react-icons/hi2";
+import { FiArchive } from "react-icons/fi";
+import { RiDeleteBin6Line } from "react-icons/ri";
  
 const Details = ({friend}) => {
 
@@ -41,9 +44,9 @@ const Details = ({friend}) => {
                                        </div>
                                        
                                        <div className="my-10 gap-2 grid grid-cols-1">
-                                            <button className="btn btn-ghost border-gray-200">Snooze 2 Weeks</button>
-                                              <button className="btn btn-ghost border-gray-200">Archieve</button>
-                                                <button className="btn btn-ghost border-gray-200 text-red-400">Delete</button>
+                                            <button className="btn btn-ghost border-gray-200"><HiOutlineBellSnooze/>Snooze 2 Weeks</button>
+                                              <button className="btn btn-ghost border-gray-200"><FiArchive/>Archieve</button>
+                                                <button className="btn btn-ghost border-gray-200 text-red-400"><RiDeleteBin6Line/>Delete</button>
                                        </div>
                             </div>
 

@@ -14,7 +14,7 @@ const Navbar = () => {
      <div>
         <div className="navbar bg-white shadow-sm px-20 ">
                 <div className="navbar-start">
-                    <Link href="/" className="text-2xl text-black"><span className="font-bold">Keen</span>Keeper</Link>
+                    <Link href="/" className="text-2xl text-[#244D3F]"><span className=" text-black font-bold">Keen</span>Keeper</Link>
                 </div>
 
                 <div className="navbar-end gap-3">

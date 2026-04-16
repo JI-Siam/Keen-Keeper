@@ -10,8 +10,7 @@ const DetailsPage = async ({params}) => {
     const selectedFriend = data.find(frnd => frnd.id == id) ; 
 
         return (
-        <div>
-            Details of user :  {selectedFriend.name}
+        <div className="my-20">
 
             <Details friend={selectedFriend}></Details>
         </div>
