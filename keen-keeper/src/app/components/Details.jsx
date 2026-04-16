@@ -1,10 +1,16 @@
-import React from 'react';
+
+'use client'
+
 import Image from 'next/image';
 import { IoMdCall } from "react-icons/io";
 import { LuMessageSquareMore } from "react-icons/lu";
 import { IoVideocamOutline } from "react-icons/io5";
-
+import { FriendContext } from '../context/FriendContext';
+import { useContext } from 'react';
+ 
 const Details = ({friend}) => {
+
+    const {handleCall , handleText , handleVideo} = useContext(FriendContext) ;
     return (
         <div>
                 <div className="container mx-auto grid gap-10 md:grid-cols-3 ">
@@ -27,7 +33,7 @@ const Details = ({friend}) => {
                                                         <div className="card-actions flex gap-3 flex-wrap">
                                                             {friend.tags.map((item,index) => <span key={index} className="bg-emerald-100 px-3 py-2 rounded-full text-center">{item}</span>)}
                                                         </div>
-                                                          <p classNam="text-gray-400">{friend.bio}</p>
+                                                          <p className="text-gray-400">{friend.bio}</p>
                                             
                                                          
                                            
@@ -90,21 +96,21 @@ const Details = ({friend}) => {
 
                                         <div className="grid md:grid-cols-3 gap-3">
 
-                                        <div className="card bg-base-100 shadow-sm">
+                                        <div className="card bg-base-100 shadow-sm" onClick={()=> handleCall({friend})}>
                                             <div className="card-body items-center text-center">
                                                 <h2 className="card-title text-2xl"><IoMdCall></IoMdCall></h2>
                                                 <p className="text-gray-500">Call</p>
                                             </div>
                                         </div>
 
-                                        <div className="card bg-base-100 shadow-sm">
+                                        <div className="card bg-base-100 shadow-sm"  onClick={()=> handleText({friend})}>
                                             <div className="card-body items-center text-center">
                                                 <h2 className="card-title text-2xl"><LuMessageSquareMore></LuMessageSquareMore></h2>
                                                 <p className="text-gray-500">Text</p>
                                             </div>
                                         </div>
 
-                                        <div className="card bg-base-100  shadow-sm">
+                                        <div className="card bg-base-100  shadow-sm"  onClick={()=> handleVideo({friend})}>
                                             <div className="card-body items-center text-center">
                                                 <h2 className="card-title text-2xl"><IoVideocamOutline></IoVideocamOutline></h2>
                                                 <p className="text-gray-500">Video</p>
