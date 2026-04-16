@@ -9,7 +9,7 @@ const Friend = ({friend}) => {
                     <figure className="px-10 pt-10">
                         <div className="relative w-[100px] h-[100px]">
                             <Image
-                                src="/image.png"
+                                src={friend.picture}
                                 alt="friend-image"
                                 fill
                                 className="rounded-full object-cover"

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Cristiano Ronaldo",
-    "picture": "https://example.com/ronaldo.jpg",
+    "picture": "/assets/ronaldo.png",
     "email": "ronaldo@football.com",
     "days_since_contact": 3,
     "status": "active",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Sheikh Hasina",
-    "picture": "https://example.com/hasina.jpg",
+    "picture": "/assets/hasina.png",
     "email": "hasina@gov.bd",
     "days_since_contact": 20,
     "status": "overdue",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Elon Musk",
-    "picture": "https://example.com/musk.jpg",
+    "picture": "/assets/elon.png",
     "email": "elon@spacex.com",
     "days_since_contact": 30,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Taylor Swift",
-    "picture": "https://example.com/swift.jpg",
+    "picture": "/assets/taylor.png",
     "email": "taylor@music.com",
     "days_since_contact": 5,
     "status": "active",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Lionel Messi",
-    "picture": "https://example.com/messi.jpg",
+    "picture": "/assets/messi.png",
     "email": "messi@football.com",
     "days_since_contact": 1,
     "status": "active",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Mark Zuckerberg",
-    "picture": "https://example.com/zuck.jpg",
+    "picture": "/assets/zukerbug.png",
     "email": "mark@meta.com",
     "days_since_contact": 15,
     "status": "pending",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "MrBeast",
-    "picture": "https://example.com/mrbeast.jpg",
+    "picture": "/assets/mrbeast.png",
     "email": "beast@youtube.com",
     "days_since_contact": 9,
     "status": "pending",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Narendra Modi",
-    "picture": "https://example.com/modi.jpg",
+    "picture": "/assets/modi.png",
     "email": "modi@gov.in",
     "days_since_contact": 40,
     "status": "overdue",
