@@ -7,7 +7,7 @@ const Interactions = () => {
     const {interactionList} = useContext(FriendContext) ;
     console.log(interactionList) ;
     return (
-        <div className="container mx-auto">
+        <div >
             {interactionList.map((interaction,index) => <InteractionCard key={index} friend={interaction}></InteractionCard>)}
         </div>
     );

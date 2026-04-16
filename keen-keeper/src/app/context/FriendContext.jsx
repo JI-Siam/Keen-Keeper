@@ -21,17 +21,17 @@ const FriendProvider = ({children}) => {
 
         const handleCall = ({ friend }) => {
             toast.success(`Calling ${friend.name} ...`);
-            addInteraction(friend, "call");
+            addInteraction(friend, "Call");
         };
 
         const handleText = ({ friend }) => {
             toast.success(`Texting ${friend.name} ...`);
-            addInteraction(friend, "text");
+            addInteraction(friend, "Text");
         };
 
         const handleVideo = ({ friend }) => {
             toast.success(`Video Calling ${friend.name} ...`);
-            addInteraction(friend, "video");
+            addInteraction(friend, "Video");
         };
 
             const data = {

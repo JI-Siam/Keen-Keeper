@@ -1,5 +1,5 @@
 
-
+import { IoMdAdd } from "react-icons/io";
 const Banner = () => {
     return (
         <div>
@@ -10,7 +10,7 @@ const Banner = () => {
                         <p className="py-6 text-sm text-base-400">
                             Your personal shelf of meaningful connections. Browse, tend, and nurture <br></br>the relationships that matter most.
                         </p>
-                        <button className="btn bg-[#244D3F] text-white">Add Friend</button>
+                        <button className="btn bg-[#244D3F] text-white"><IoMdAdd/> Add Friend</button>
                         </div>
                     </div>
                     </div>
