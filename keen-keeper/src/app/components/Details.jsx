@@ -11,6 +11,7 @@ import { useContext } from 'react';
 import { HiOutlineBellSnooze } from "react-icons/hi2";
 import { FiArchive } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import Link from 'next/link'
 
  
 const Details = ({id}) => {
@@ -28,6 +29,17 @@ const Details = ({id}) => {
 
     if (loading) {
         return <div className="text-center py-10">Loading<span className="loading loading-spinner loading-xl"></span></div> ;
+    }
+
+    if(!friend){
+        return(
+            <div className='container mx-auto bg-gray-100 my-20 text-center p-40 space-y-5 rounded-2xl'>
+            <h2 className='text-4xl font-bold text-[#244D3F]'> 404! Not Found!</h2>
+            <p>Could not find requested friend</p>
+            <Link href="/" className='btn bg-[#244D3F] text-white'>Return Home</Link>
+        </div>
+        )
+        
     }
 
     return (
@@ -48,7 +60,7 @@ const Details = ({id}) => {
                                                         </figure>
                                                     <div className="card-body items-center text-center">
                                                         <h2 className="card-title">{friend .name}</h2>
-                                                        <h3 className={`${friend .status == 'overdue' ? 'bg-red-700' : friend .status == 'active' ? 'bg-green-800' : 'bg-yellow-500' } text-white rounded-full px-3 py-2`}>{friend .status}</h3>
+                                                        <h3 className={`${friend .status == 'overdue' ? 'bg-red-700' : friend .status == 'on-track' ? 'bg-green-800' : 'bg-yellow-500' } text-white rounded-full px-3 py-2`}>{friend .status}</h3>
                                                         <div className="card-actions flex gap-3 flex-wrap">
                                                             {friend .tags.map((item,index) => <span key={index} className="bg-emerald-100 px-3 py-2 rounded-full text-center">{item}</span>)}
                                                         </div>

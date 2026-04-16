@@ -24,7 +24,7 @@ const Friend = ({friend}) => {
                         {friend.tags.map((item,index) => <span key={index} className="bg-emerald-100 px-3 py-2 rounded-full text-center">{item}</span>)}
                     </div>
         
-                     <h3 className={`${friend.status == 'overdue' ? 'bg-red-700' : friend.status == 'active' ? 'bg-green-800' : 'bg-yellow-500' } text-white rounded-full px-3 py-2`}>{friend.status}</h3>
+                     <h3 className={`${friend.status == 'overdue' ? 'bg-red-700' : friend.status == 'on-track' ? 'bg-green-800' : 'bg-yellow-500' } text-white rounded-full px-3 py-2`}>{friend.status}</h3>
        
                 </div>
             </div>
