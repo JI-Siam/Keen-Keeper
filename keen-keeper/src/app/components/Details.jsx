@@ -65,6 +65,7 @@ const Details = ({id}) => {
                                                             {friend .tags.map((item,index) => <span key={index} className="bg-emerald-100 px-3 py-2 rounded-full text-center">{item}</span>)}
                                                         </div>
                                                           <p className="text-gray-400">{friend .bio}</p>
+                                                           <p className="text-gray-400">{friend .email}</p>
                                             
                                                          
                                            
